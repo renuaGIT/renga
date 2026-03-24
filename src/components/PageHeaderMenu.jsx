@@ -51,11 +51,6 @@ const PageHeaderMenu = () => {
       url: "https://www.behance.net/gallery/192663151/Looksrare-NFT-Marketplace-UIUX",
     },
     {
-      title: "Bobaswap",
-      video: "/videos/Bobaswap.webm",
-      isReleased: true,
-    },
-    {
       title: "Pancakeswap",
       video: "/videos/Pancakeswap.webm",
       isReleased: true,
