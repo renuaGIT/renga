@@ -295,6 +295,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 36px;
+  font-weight: 500;
   box-sizing: border-box;
 }
 
@@ -311,12 +312,6 @@ textarea {
   display: flex;
   align-items: center;
   gap: 36px;
-}
-
-/* Hide default page footer on contact-us page */
-.contact-us ~ .page-footer,
-body:has(.contact-us) .page-footer {
-  display: none !important;
 }
 
 .contact-us-footer span {

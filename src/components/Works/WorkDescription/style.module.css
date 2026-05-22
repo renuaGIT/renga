@@ -1,0 +1,70 @@
+.WorkDescription {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 2000px;
+  margin: 0 auto 120px;
+}
+
+.WorkDescriptionTitle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.WorkDescriptionInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.WorkDescriptionInfo b {
+  color: #84858C;
+}
+
+.WorkDescriptionInfo ul {
+  margin-top: 12px;
+  line-height: 35px;
+}
+
+.WorkDescriptionTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.WorkDescriptionTexts li {
+  max-width: 570px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+@media (max-width: 767px) {
+  .WorkDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding: 0 12px;
+    margin: 0 auto 50px;
+  }
+
+  .WorkDescriptionInfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  .WorkDescriptionTexts li {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

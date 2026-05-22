@@ -1,0 +1,21 @@
+.gallery {
+  display: flex;
+}
+
+.gallery--reversed {
+  flex-direction: row-reverse;
+}
+
+.media {
+  width: auto;
+  height: auto;
+  aspect-ratio: 1060/742;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .media {
+    width: 100%;
+    aspect-ratio: initial;
+  }
+}

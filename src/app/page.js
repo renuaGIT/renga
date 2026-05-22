@@ -1,13 +1,9 @@
-import PageFooter from "@/components/PageFooter";
-import PageHeader from "@/components/PageHeader";
-import PageInfo from "@/components/PageInfo";
+import HomeContent from "@/components/Home/HomeContent";
 
 export default function Home() {
   return (
     <>
-      <PageHeader />
-      <PageInfo />
-      <PageFooter />
+      <HomeContent />
     </>
   );
 }

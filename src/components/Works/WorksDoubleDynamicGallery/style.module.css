@@ -1,0 +1,34 @@
+.gallery {
+  display: grid;
+  grid-template-columns: 1.87fr 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.mediaWrapper:first-child {
+  aspect-ratio: 989 / 528;
+}
+
+.mediaWrapper:last-child {
+  aspect-ratio: 527 / 528;
+}
+
+.media {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mediaWrapper:first-child,
+  .mediaWrapper:last-child {
+    width: 100%;
+    aspect-ratio: unset;
+  }
+}

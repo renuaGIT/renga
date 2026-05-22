@@ -1,0 +1,33 @@
+.contactUs {
+  transform-origin: center;
+  transform: scale3d(0, 0, 0);
+}
+
+@media (min-width: 768px) {
+  .contactUs {
+    position: fixed;
+    right: 24px;
+    bottom: 50px;
+    padding: 12px 24px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #0d0d0d;
+    border-radius: 30px;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .contactUs:hover {
+    color: #ffffff;
+    background-color: #A6A6A6;
+  }
+
+  .contactUs.visible {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media (max-width: 767px) {
+  .contactUs {
+    display: none;
+  }
+}

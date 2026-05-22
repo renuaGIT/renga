@@ -1,0 +1,49 @@
+.commonHero {
+  padding-top: 260px;
+}
+
+.commonHero__title {
+  padding: 0 36px;
+  font-weight: 600;
+  font-size: 56px;
+}
+
+.commonHero__descr {
+  max-width: 100%;
+  max-width: 737px;
+  padding: 0 36px;
+  font-size: 48px;
+}
+
+.commonHero__title + .commonHero__descr {
+  margin-top: 48px;
+}
+
+.commonHero__video {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 48px;
+}
+
+@media (max-width: 767px) {
+  .commonHero {
+    padding-top: 155px;
+  }
+
+  .commonHero__title {
+    padding: 0 20px;
+    font-size: 36px;
+  }
+
+  .commonHero__descr {
+    padding: 0 20px;
+    font-size: 32px;
+  }
+
+  .commonHero__title + .commonHero__descr {margin-top: 24px;}
+
+  .commonHero__video {
+    margin-top: 36px;
+  }
+}

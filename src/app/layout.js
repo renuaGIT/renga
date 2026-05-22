@@ -1,55 +1,65 @@
-
 import "./globals.css";
-import { GoogleAnalytics } from '@next/third-parties/google';
-import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import PageHeader from "@/components/PageHeader";
+import PageFooterBig from "@/components/PageFooterBig";
+import ScrollContainer from "@/components/ScrollContainer";
+import GetInTouchFixed from "@/components/GetInTouchFixed";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
+  metadataBase: new URL("https://renua.one"),
+
   title: {
-    default: "Renua - Creative Agency",
+    default: "Renua — AI, Fintech & Digital Product Design Studio",
     template: "%s | Renua",
   },
-  description: "Renua - shaping brands and digital experiences through motion, design, and storytelling.",
-  keywords: ["creative agency", "motion design", "branding", "digital storytelling"],
-  authors: [{ name: "Renua Team", url: "https://renua.com" }],
-  creator: "Renua Creative Agency",
-  publisher: "Renua",
+
+  description:
+    "Renua is a digital product design studio creating branding, motion systems and scalable experiences for AI, fintech and technology companies.",
+
+  keywords: [
+    "product design agency",
+    "branding agency",
+    "motion design",
+    "AI product design",
+    "fintech design",
+    "digital product studio",
+    "startup design partner",
+  ],
+
   openGraph: {
-    title: "Renua - Creative Agency",
-    description: "Shaping brands and digital experiences through motion and design.",
-    url: "https://renua.com",
+    title: "Renua — AI, Fintech & Digital Product Design Studio",
+
+    description:
+      "Branding, motion systems and digital product experiences for AI, fintech and technology companies.",
+
+    url: "https://renua.one",
+
     siteName: "Renua",
+
     images: [
       {
         url: "/Renua_Preview.png",
         width: 1200,
         height: 630,
-        alt: "Renua - Preview",
       },
     ],
+
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Renua - Creative Agency",
-    description: "Shaping brands and digital experiences through motion and design.",
+    title: "Renua",
+    description: "AI, fintech and digital product design studio.",
     images: ["/Renua_Preview.png"],
-    creator: "@renua",
-  },
-  alternates: {
-    canonical: "https://renua.com",
-  },
-  robots: {
-    index: true,
-    follow: true,
   },
   icons: {
     icon: "favicon/favicon.ico",
     shortcut: "favicon/favicon-16x16.png",
     apple: "favicon/apple-touch-icon.png",
   },
-  themeColor: "#0D0D0D",
   other: {
     "p:domain_verify": "314f74d0dbf28b0b51e17b63977cdc71",
   },
@@ -59,10 +69,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="app">
-        <PageHeader />
-          {children}
-        </div>
+        <ScrollContainer>
+          <div className="app">
+            <PageHeader />
+            {children}
+            <PageFooterBig />
+            <GetInTouchFixed />
+          </div>
+        </ScrollContainer>
+        <SpeedInsights />
       </body>
       <GoogleAnalytics gaId="G-54E24VX7E5" />
       {/* <Script

@@ -1,0 +1,45 @@
+.WorkInsight {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 0 36px;
+  margin: 132px 0;
+}
+
+.WorkInsight--reversed > span {
+  order: 2;
+}
+
+.WorkInsight--reversed .WorkInsight__section {
+  order: 1;
+}
+
+.WorkInsight__section {
+  max-width: 570px;
+}
+
+
+.WorkInsight__title {
+  font-weight: 500;
+}
+
+.WorkInsight__descr {
+  margin-top: 28px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .WorkInsight {
+    display: flex;
+    padding: 0 12px;
+    margin: 64px 0;
+  }
+
+  .WorkInsight > span {display: none;}
+
+  .WorkInsight__section {font-size: 20px;}
+
+  .WorkInsight__descr {
+    margin-top: 25px;
+  }
+}

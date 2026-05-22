@@ -1,0 +1,36 @@
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1.87fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.mediaWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mediaWrapper:nth-child(1) {
+  aspect-ratio: 528 / 754;
+}
+
+.mediaWrapper:nth-child(2) {
+  aspect-ratio: 988 / 754;
+}
+
+.mediaWrapper img,
+.mediaWrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 4px 0;
+  }
+}

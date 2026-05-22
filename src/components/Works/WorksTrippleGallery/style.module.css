@@ -1,0 +1,46 @@
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "item1 item1"
+    "item2 item3";
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.gallery--reversed {
+  grid-template-areas:
+    "item1 item2"
+    "item3 item3";
+}
+
+.mediaWrapper:nth-child(1) {
+  grid-area: item1;
+}
+
+.mediaWrapper:nth-child(2) {
+  grid-area: item2;
+}
+
+.mediaWrapper:nth-child(3) {
+  grid-area: item3;
+}
+
+.mediaWrapper {
+  position: relative;
+}
+
+.mediaWrapper img,
+.mediaWrapper video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    margin: 4px 0;
+    gap: 4px;
+  }
+}

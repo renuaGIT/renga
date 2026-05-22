@@ -1,0 +1,163 @@
+/* content */
+
+.clients-content {
+  padding: 260px 0 200px;
+}
+
+.clients-content__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 240px;
+  padding: 0 36px;
+  margin-top: 240px;
+}
+
+.clients-content__title {
+  padding: 0 36px;
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.clients-content__descr {
+  max-width: 830px;
+  padding: 0 36px;
+  margin-top: 48px;
+  font-size: 48px;
+}
+
+.clients-content__img {
+  width: calc(100% + 72px);
+  height: auto;
+  display: block;
+  margin-top: 96px;
+  margin-left: -36px;
+}
+
+.clients-content__text {
+  max-width: 525px;
+  padding: 0 36px;
+  margin-top: 160px;
+}
+
+@media (max-width: 1199px) {
+  .clients-content {
+    gap: 120px;
+  }
+
+  .clients-content__text {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .clients-content {
+    padding: 155px 0 72px;
+  }
+
+  .clients-content__wrapper {
+    gap: 72px;
+    padding: 0 20px;
+    margin-top: 96px;
+  }
+
+  .clients-content__title {
+    padding: 0 20px;
+    font-size: 36px;
+  }
+
+  .clients-content__descr {
+    padding: 0 20px;
+    margin-top: 24px;
+    font-size: 32px;
+  }
+
+  .clients-content__img {
+    width: calc(100% + 40px);
+    margin-top: 36px;
+    margin-left: -20px;
+  }
+
+  .clients-content__text {
+    margin-top: 96px;
+    padding: 0 20px;
+  }
+}
+
+/* clients collaborations */
+
+.clients-collaborations__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 36px;
+}
+
+.clients-collaborations__item {
+  height: 192px;
+  padding: 24px;
+}
+
+.clients-collaborations__item:nth-child(-n + 4) {
+  background-color: #d7f9ff;
+}
+
+.clients-collaborations__item b {
+  font-weight: 600;
+}
+
+.clients-collaborations__item p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #84858c;
+  white-space: pre-line;
+}
+
+@media(min-width: 2380px) {
+  .clients-collaborations__item b {
+    font-size: 38px;
+  }
+
+  .clients-collaborations__item p {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .clients-collaborations__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .clients-collaborations__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .clients-collaborations__item {
+    height: auto;
+  }
+}
+
+/* clients industries */
+
+.clients-industries b {
+  display: block;
+  max-width: 950px;
+  margin-top: 96px;
+  font-weight: 600;
+  font-size: 62px;
+}
+
+@media (max-width: 1199px) {
+.clients-industries b {
+  margin-top: 72px;
+}
+}
+
+
+@media (max-width: 767px) {
+  .clients-industries b {
+    margin-top: 48px;
+    font-size: 48px;
+  }
+}
