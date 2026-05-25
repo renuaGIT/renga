@@ -21,7 +21,7 @@ const HomeWorksItem = ({
       <LazyVideo src={src === "" ? null : src} poster={poster} />
       <b>{name}</b>
       <p>{descr}</p>
-      {href === "" && <FollowCursor>Soon</FollowCursor>}
+      {href === "" ? <FollowCursor>Soon</FollowCursor> : <FollowCursor>View case</FollowCursor>}
     </Link>
   );
 };
