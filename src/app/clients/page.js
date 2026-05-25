@@ -165,8 +165,6 @@ const page = () => {
 
         <TestimonialsSlider testimonials={testimonialsList} />
 
-        <LetsBuild />
-
         <section className="clients-collaborations">
           <BorderedTitle>Selected collaborations</BorderedTitle>
           <ul className="clients-collaborations__list">
@@ -178,6 +176,8 @@ const page = () => {
             ))}
           </ul>
         </section>
+
+        <LetsBuild />
 
         <section className="clients-industries">
           <BorderedTitle>Industries</BorderedTitle>
