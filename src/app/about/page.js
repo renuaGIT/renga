@@ -32,18 +32,6 @@ export const metadata = {
   },
 };
 
-const partners = [
-  "huawei",
-  "optimism",
-  "ford",
-  "abbott",
-  "binance",
-  "papara",
-  "vodafone",
-  "eclipse",
-  "polkadot",
-  "amc",
-];
 
 const page = () => {
   return (
