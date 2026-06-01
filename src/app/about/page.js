@@ -10,25 +10,29 @@ import LastProjects from "@/components/LastProjects";
 import HomePartners from "@/components/Home/Partners/HomePartners";
 
 export const metadata = {
-  title: "Clients — AI, Fintech & Technology Companies | Renua",
+  title: "About Renua — Digital Design Studio for AI, Fintech & SaaS",
 
   description:
-    "We partner with startups and global companies across AI, fintech, SaaS and digital products to build scalable product experiences.",
+    "Renua is an independent digital design studio focused on product design, brand identity, motion systems and digital experiences for ambitious technology companies.",
 
   keywords: [
-    "design agency clients",
-    "fintech clients",
-    "AI startups",
-    "technology companies",
-    "product design collaborations",
-    "startup partnerships",
+    "digital design studio",
+    "product design studio",
+    "branding studio",
+    "motion design studio",
+    "AI design agency",
+    "fintech design agency",
+    "SaaS design studio",
+    "technology design company",
+    "digital product design",
+    "brand identity studio",
   ],
 
   openGraph: {
-    title: "Clients — Renua",
+    title: "About Renua",
 
     description:
-      "Selected clients and collaborations across AI, fintech and technology.",
+      "Independent digital design studio creating brands, products and digital experiences for technology companies.",
   },
 };
 
@@ -37,7 +41,8 @@ const page = () => {
   return (
     <main className="about-content">
       <section>
-        <h1 className="about-content__title">About</h1>
+        <h1 className="visually-hidden">We design brands, products and digital experiences for ambitious technology companies.</h1>
+        <h2 className="about-content__title">About</h2>
         <p className="about-content__descr">
           We design brands, products and digital experiences for ambitious
           companies.
