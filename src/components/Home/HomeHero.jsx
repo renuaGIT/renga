@@ -10,8 +10,8 @@ const HomeHero = () => {
       </h1>
       <div>
         <LazyVideo
-          src="/img/home/Tama.webm"
-          poster="/img/home/hero-poster.jpg"
+          src="/img/home/hero.webm"
+          poster="/img/home/hero.webp"
           className="hero__video"
         />
         <FollowCursor>Soon</FollowCursor>
