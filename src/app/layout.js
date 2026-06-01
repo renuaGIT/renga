@@ -79,7 +79,8 @@ export default function RootLayout({ children }) {
         </ScrollContainer>
         <SpeedInsights />
       </body>
-      <GoogleAnalytics gaId="-bi7X69eamaJwC3qPyNYd5QnSS7KPpwiIIWrWubbxTw" />
+      {/* <GoogleAnalytics gaId="-bi7X69eamaJwC3qPyNYd5QnSS7KPpwiIIWrWubbxTw" /> */}
+      <meta name="google-site-verification" content="-bi7X69eamaJwC3qPyNYd5QnSS7KPpwiIIWrWubbxTw" />
       {/* <Script
         id="emailjs-init"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
