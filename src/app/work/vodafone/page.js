@@ -9,7 +9,7 @@ import WorksTrippleGallery from "@/components/Works/WorksTrippleGallery/WorksTri
 import WorksTrippleGallerySmall from "@/components/Works/WorksTrippleGallerySmall/WorksTrippleGallerySmall";
 
 export const metadata = {
-  title: "Vodafone — Brand Campaign & Illustration System | Renua",
+  title: "Vodafone — Brand Campaign & Illustration System ",
 
   description:
     "A large-scale illustration and campaign system created for Vodafone across digital platforms, outdoor advertising and branded communication.",
@@ -24,7 +24,7 @@ export const metadata = {
   ],
 
   openGraph: {
-    title: "Vodafone — Brand Campaign & Illustration System | Renua",
+    title: "Vodafone — Brand Campaign & Illustration System ",
     description:
       "A large-scale illustration and campaign system for digital and outdoor communication.",
 

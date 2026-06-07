@@ -1,13 +1,16 @@
+import { redirect } from "next/navigation";
 import WorksTabs from "@/components/Works/WorksTabs";
 import Works from "@/components/Works/Works";
-import { getWorksByCategory, worksSeoConfig } from "@/lib/works"; // Импортируем функцию фильтрации
+import { getWorksByCategory, worksSeoConfig } from "@/lib/works";
 import { notFound } from "next/navigation";
 import '../works.css';
 
 export async function generateMetadata({ params }) {
   const { category } = await params;
-  const seoData = worksSeoConfig[category];
 
+  if (category === "all") return {};
+
+  const seoData = worksSeoConfig[category];
   if (!seoData) return {};
 
   const canonicalUrl = `https://renua.one/work/${category}`;
@@ -16,31 +19,26 @@ export async function generateMetadata({ params }) {
     title: seoData.metaTitle,
     description: seoData.metaDescr,
     keywords: seoData.keywords,
-    alternates: {
-      canonical: canonicalUrl,
-    },
+    alternates: { canonical: canonicalUrl },
     openGraph: {
       title: seoData.metaTitle,
       description: seoData.metaDescr,
       url: canonicalUrl,
       siteName: "Renua",
       type: "website",
-      images: [
-        {
-          url: "https://renua.one/Renua_Preview.png",
-          width: 1200,
-          height: 630,
-          alt: `${seoData.metaTitle} — Renua`,
-        },
-      ],
+      images: [{ url: "https://renua.one/Renua_Preview.png", width: 1200, height: 630, alt: `${seoData.metaTitle} — Renua` }],
     },
   };
 }
 
 const CategoryPage = async ({ params }) => {
   const { category } = await params;
-  const seoData = worksSeoConfig[category];
 
+  if (category === "all") {
+    redirect("/work");
+  }
+
+  const seoData = worksSeoConfig[category];
   if (!seoData) {
     notFound();
   }

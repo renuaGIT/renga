@@ -8,7 +8,7 @@ import WorkSingleMedia from "@/components/Works/WorkSingleMedia";
 import WorksTrippleGallery from "@/components/Works/WorksTrippleGallery/WorksTrippleGallery";
 
 export const metadata = {
-  title: "Freedom Finance Card Series — Fintech Card Design & 3D Visuals | Renua",
+  title: "Freedom Finance Card Series — Fintech Card Design & 3D Visuals ",
 
   description:
     "A premium bank card series combining fintech branding, material exploration and cinematic 3D visual storytelling.",
@@ -23,7 +23,7 @@ export const metadata = {
   ],
 
   openGraph: {
-    title: "Freedom Finance Card Series — Fintech Card Design & 3D Visuals | Renua",
+    title: "Freedom Finance Card Series — Fintech Card Design & 3D Visuals ",
     description:
       "A premium fintech card series combining branding, materials and cinematic 3D visuals.",
 

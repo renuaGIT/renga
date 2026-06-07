@@ -1,4 +1,4 @@
-import { worksSeoConfig } from "@/lib/works";
+import { worksSeoConfig, allWorks } from "@/lib/works";
 
 export default function sitemap() {
   const baseUrl = 'https://renua.one';
@@ -19,12 +19,24 @@ export default function sitemap() {
   }));
 
 
-  const categoryRoutes = Object.keys(worksSeoConfig).map((category) => ({
-    url: `${baseUrl}/work/${category}`,
-    lastModified: new Date().toISOString(),
-    changeFrequency: 'daily',
-    priority: 0.7,
-  }));
+  const categoryRoutes = Object.keys(worksSeoConfig)
+    .filter((category) => category !== "all")
+    .map((category) => ({
+      url: `${baseUrl}/work/${category}`,
+      lastModified: new Date().toISOString(),
+      changeFrequency: 'daily',
+      priority: 0.7,
+    }));
 
-  return [...staticRoutes, ...categoryRoutes];
+  const caseRoutes = allWorks
+    .filter((work) => work.isReady)
+    .map((work) => ({
+      url: `${baseUrl}/work/${work.slug}`,
+      lastModified: new Date().toISOString(),
+      changeFrequency: 'weekly',
+      priority: 0.6,
+    }));
+
+
+  return [...staticRoutes, ...categoryRoutes, ...caseRoutes];
 }

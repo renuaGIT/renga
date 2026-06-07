@@ -9,7 +9,7 @@ import WorksTrippleGallery from "@/components/Works/WorksTrippleGallery/WorksTri
 import WorksTrippleGallerySmall from "@/components/Works/WorksTrippleGallerySmall/WorksTrippleGallerySmall";
 
 export const metadata = {
-  title: "Cruz — Fintech App Branding & Product Design | Renua",
+  title: "Cruz — Fintech App Branding & Product Design",
 
   description:
     "A mobile fintech experience combining product design, motion systems and expressive visual identity for digital finance products.",
@@ -24,7 +24,7 @@ export const metadata = {
   ],
 
   openGraph: {
-    title: "Cruz — Fintech App Branding & Product Design | Renua",
+    title: "Cruz — Fintech App Branding & Product Design",
     description:
       "A mobile fintech experience combining product design, motion systems and expressive visual identity.",
 

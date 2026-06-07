@@ -12,7 +12,7 @@ import WorksTrippleGalleryFirstNull from "@/components/Works/WorksTrippleGallery
 import WorksTrippleRowGallery from "@/components/Works/WorksTrippleRowGallery";
 
 export const metadata = {
-  title: "NVO — Trading Platform Product Design & Branding | Renua",
+  title: "NVO — Trading Platform Product Design & Branding ",
 
   description:
     "A high-performance trading platform combining product systems, motion design and digital brand identity for modern finance.",
@@ -27,7 +27,7 @@ export const metadata = {
   ],
 
   openGraph: {
-    title: "NVO — Trading Platform Product Design & Branding | Renua",
+    title: "NVO — Trading Platform Product Design & Branding ",
     description:
       "A high-performance trading platform combining product systems and digital brand identity.",
 

@@ -9,7 +9,7 @@ import WorksTrippleGallery from '@/components/Works/WorksTrippleGallery/WorksTri
 import WorksTrippleRowGallery from '@/components/Works/WorksTrippleRowGallery';
 
 export const metadata = {
-  title: "LooksRare — NFT Marketplace Product Design & Branding | Renua",
+  title: "LooksRare — NFT Marketplace Product Design & Branding ",
 
   description:
     "A digital marketplace experience combining branding, UI systems and motion design for modern Web3 communities.",
@@ -24,7 +24,7 @@ export const metadata = {
   ],
 
   openGraph: {
-    title: "LooksRare — NFT Marketplace Product Design & Branding | Renua",
+    title: "LooksRare — NFT Marketplace Product Design & Branding ",
     description:
       "A digital marketplace experience combining branding, UI systems and motion design.",
 

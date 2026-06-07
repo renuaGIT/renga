@@ -174,7 +174,7 @@ export const worksSeoConfig = {
     h1: "Selected work",
     descr:
       "A selection of recent projects across branding, product design and digital experiences for ambitious teams.",
-    metaTitle: "Selected Work — Product Design, Branding & Motion | Renua",
+    metaTitle: "Selected Work — Product Design, Branding & Motion ",
     metaDescr:
       "Selected product design, branding, fintech, AI and motion design projects created for startups and global technology companies.",
     keywords: [
@@ -191,7 +191,7 @@ export const worksSeoConfig = {
     descr:
       "Selected brand identity systems, visual languages and scalable design frameworks for ambitious technology companies.",
     metaTitle:
-      "Brand Identity Projects — Technology Branding & Visual Systems | Renua",
+      "Brand Identity Projects — Technology Branding & Visual Systems ",
     metaDescr:
       "Selected brand identity projects, visual systems and scalable branding frameworks created for AI, fintech, SaaS and technology companies.",
     keywords: [
@@ -210,7 +210,7 @@ export const worksSeoConfig = {
     descr:
       "Digital products, platforms and user experiences designed for growth, adoption and long-term scale.",
     metaTitle:
-      "Product Design Projects — Digital Products & UX Systems | Renua",
+      "Product Design Projects — Digital Products & UX Systems ",
     metaDescr:
       "Digital products, SaaS platforms and user experiences designed for growth, usability and long-term scalability.",
     keywords: [
@@ -229,7 +229,7 @@ export const worksSeoConfig = {
     descr:
       "Marketing websites, product experiences and digital platforms built to communicate clearly and convert effectively.",
     metaTitle:
-      "Web Design Projects — Marketing Websites & Digital Experiences | Renua",
+      "Web Design Projects — Marketing Websites & Digital Experiences ",
     metaDescr:
       "High-performance marketing websites, digital platforms and web experiences designed for ambitious technology companies.",
     keywords: [
@@ -248,7 +248,7 @@ export const worksSeoConfig = {
     descr:
       "Motion systems, product animations and visual storytelling created to enhance digital experiences.",
     metaTitle:
-      "Motion Design Projects — Animation & Visual Storytelling | Renua",
+      "Motion Design Projects — Animation & Visual Storytelling ",
     metaDescr:
       "Motion systems, animation frameworks and digital storytelling designed for brands, products and campaigns.",
     keywords: [
@@ -266,7 +266,7 @@ export const worksSeoConfig = {
     h1: "Illustration Projects",
     descr:
       "Custom illustration systems and visual assets designed for brands, products and digital platforms.",
-    metaTitle: "Illustration Projects — Custom Illustration Systems | Renua",
+    metaTitle: "Illustration Projects — Custom Illustration Systems ",
     metaDescr:
       "Custom illustration systems, visual assets and creative frameworks designed for modern technology brands.",
     keywords: [
@@ -284,7 +284,7 @@ export const worksSeoConfig = {
     h1: "3D Motion & Visual Systems",
     descr:
       "High-end 3D visuals, motion assets and immersive content for brands, products and campaigns.",
-    metaTitle: "3D Motion Design — Visual Systems & Product Animation | Renua",
+    metaTitle: "3D Motion Design — Visual Systems & Product Animation ",
     metaDescr:
       "High-end 3D visuals, motion systems and immersive digital content for technology brands and products.",
     keywords: [
@@ -303,7 +303,7 @@ export const worksSeoConfig = {
     descr:
       "Creative campaigns, launch assets and marketing systems built to engage audiences and support growth.",
     metaTitle:
-      "Campaign Design Projects — Creative Launches & Marketing Systems | Renua",
+      "Campaign Design Projects — Creative Launches & Marketing Systems ",
     metaDescr:
       "Creative campaigns, launch systems and marketing assets designed to help technology companies grow and engage audiences.",
     keywords: [
@@ -322,7 +322,7 @@ export const worksSeoConfig = {
     descr:
       "Selected work across AI products, intelligent systems and emerging technologies shaping the future of digital experiences.",
     metaTitle:
-      "AI Product Design — AI Platforms, Interfaces & Experiences | Renua",
+      "AI Product Design — AI Platforms, Interfaces & Experiences ",
     metaDescr:
       "Selected AI products, intelligent systems and platform experiences designed for the next generation of technology companies.",
     keywords: [

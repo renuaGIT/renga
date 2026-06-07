@@ -4,7 +4,7 @@ import Works from '@/components/Works/Works'
 import { allWorks } from '@/lib/works'
 
 export const metadata = {
-  title: "Selected Work — Product Design, Branding & Motion | Renua",
+  title: "Selected Work — Product Design, Branding & Motion",
 
   description:
     "Selected product design, branding, fintech, AI and motion design projects created for startups and global technology companies.",
