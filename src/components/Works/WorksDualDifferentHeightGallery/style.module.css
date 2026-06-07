@@ -5,6 +5,10 @@
   align-items: start;
 }
 
+.gallery--reversed {
+  grid-template-columns: 1fr 1.87fr;
+}
+
 .mediaWrapper {
   position: relative;
   width: 100%;

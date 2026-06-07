@@ -28,9 +28,20 @@ export const metadata = {
 
   openGraph: {
     title: "NVO — Trading Platform Product Design & Branding | Renua",
-
     description:
       "A high-performance trading platform combining product systems and digital brand identity.",
+
+    url: "https://renua.one/work/nvo",
+    siteName: "Renua",
+    type: "website",
+    images: [
+      {
+        url: "https://renua.one/Renua_Preview.png",
+        width: 1200,
+        height: 630,
+        alt: "NVO — Trading Platform Product Design & Branding by Renua",
+      },
+    ],
   },
 };
 
@@ -68,8 +79,11 @@ const galleryItem1 = {
 };
 
 const galleryItems2 = [
-  {src: "/img/works/nvo/gallery2-1.jpg", poster: null, },
-  {src: "/img/works/nvo/gallery2-2.webm", poster: "/img/works/nvo/gallery2-2poster.jpg", },
+  { src: "/img/works/nvo/gallery2-1.jpg", poster: null },
+  {
+    src: "/img/works/nvo/gallery2-2.webm",
+    poster: "/img/works/nvo/gallery2-2poster.jpg",
+  },
 ];
 
 const galleryItem3 = {
@@ -98,8 +112,14 @@ const galleryItem7 = {
 };
 
 const galleryItems8 = [
-  { src: "/img/works/nvo/gallery8-1.webm", poster: "/img/works/nvo/gallery8-1.jpg" },
-  { src: "/img/works/nvo/gallery8-2.webm", poster: "/img/works/nvo/gallery8-2poster.jpg" },
+  {
+    src: "/img/works/nvo/gallery8-1.webm",
+    poster: "/img/works/nvo/gallery8-1.jpg",
+  },
+  {
+    src: "/img/works/nvo/gallery8-2.webm",
+    poster: "/img/works/nvo/gallery8-2poster.jpg",
+  },
 ];
 
 const galleryItem9 = {
@@ -108,7 +128,10 @@ const galleryItem9 = {
 };
 
 const galleryItems10 = [
-  { src: "/img/works/nvo/gallery10-1.webm", poster: "/img/works/nvo/gallery10-1.jpg" },
+  {
+    src: "/img/works/nvo/gallery10-1.webm",
+    poster: "/img/works/nvo/gallery10-1.jpg",
+  },
   { src: "/img/works/nvo/gallery10-2.webp", poster: null },
 ];
 
@@ -158,8 +181,11 @@ const galleryItem19 = {
 };
 
 const galleryItems20 = [
-  {src: "/img/works/nvo/gallery20-1.svg",poster: null, },
-  {src: "/img/works/nvo/gallery20-2.webm", poster: "/img/works/nvo/gallery20-2poster.jpg",},
+  { src: "/img/works/nvo/gallery20-1.svg", poster: null },
+  {
+    src: "/img/works/nvo/gallery20-2.webm",
+    poster: "/img/works/nvo/gallery20-2poster.jpg",
+  },
 ];
 
 const galleryItem21 = {
@@ -188,9 +214,18 @@ const galleryItem25 = {
 };
 
 const galleryItem26 = [
-  { src: "/img/works/nvo/gallery26-1.webm", poster: "/img/works/nvo/gallery26-1poster.jpg" },
-  { src: "/img/works/nvo/gallery26-2.webm", poster: "/img/works/nvo/gallery26-2poster.jpg" },
-  { src: "/img/works/nvo/gallery26-3.webm", poster: "/img/works/nvo/gallery26-3poster.jpg" },
+  {
+    src: "/img/works/nvo/gallery26-1.webm",
+    poster: "/img/works/nvo/gallery26-1poster.jpg",
+  },
+  {
+    src: "/img/works/nvo/gallery26-2.webm",
+    poster: "/img/works/nvo/gallery26-2poster.jpg",
+  },
+  {
+    src: "/img/works/nvo/gallery26-3.webm",
+    poster: "/img/works/nvo/gallery26-3poster.jpg",
+  },
 ];
 
 const page = () => {
@@ -215,16 +250,13 @@ const page = () => {
         <WorkSingleMedia item={galleryItem7} />
         <WorksDualDifferentHeightGallery items={galleryItems8} />
         <WorkInsight
-          title={
-            "Product systems built for active users. A modular UI framework allowed"
-          }
-          descr={`the platform to scale across trading tools, analytics and asset
-        management experiences while maintaining visual consistency.`}
+          title={"Product systems built for active users. A modular UI framework allowed"}
+          descr={`the platform to scale across trading tools, analytics and asset management experiences while maintaining visual consistency.`}
         />
         <WorkSingleMedia item={galleryItem9} />
         <WorksDualDifferentHeightGallery items={galleryItems10} />
         <WorkInsight
-          title={"Designed around clarity and performance."}
+          title={"Designed around clarity and performance"}
           descr={`The interface system focused on hierarchy, accessibility and fast interaction flows across complex trading environments.`}
         />
         <WorkSingleMedia item={galleryItem11} />
@@ -243,7 +275,7 @@ const page = () => {
         <WorkSingleMedia item={galleryItem24} />
         <WorkSingleMedia item={galleryItem25} />
         <WorkInsight
-          title={"Finance through a more contemporary lens."}
+          title={"Finance through a more contemporary lens"}
           descr={`The final system combined product design, branding and motion into a unified trading experience.`}
           isReversed={true}
         />

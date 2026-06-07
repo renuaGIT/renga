@@ -7,9 +7,7 @@ const HomeAbout = () => {
       <BorderedTitle>What we do</BorderedTitle>
       <div className="about__info">
         <p>
-          We create brands, products and websites built for launch,
-          <br />
-          growth and long-term scale
+          We create brands, products and websites <br /> built for launch, growth and long-term scale
         </p>
         <ul>
           <li>Brand Identity</li>

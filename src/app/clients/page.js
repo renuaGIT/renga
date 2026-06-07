@@ -6,6 +6,8 @@ import LetsBuild from "@/components/LetsBuild/LetsBuild";
 import BorderedTitle from "@/components/BorderedTitle/BorderedTitle";
 import { testimonialsList } from "@/lib/reviews";
 import HeroSlider from "@/components/HeroSlider";
+import CommonLink from "@/components/CommonLink";
+import Collaborations from "@/components/Collaborations";
 
 export const metadata = {
   title: "Clients — Renua Design Agency",
@@ -97,7 +99,8 @@ const collaborationsList = [
   },
   {
     name: "Voila",
-    descr: "Motion concept and direction across \n a series of digital campaigns.",
+    descr:
+      "Motion concept and direction across \n a series of digital campaigns.",
   },
   {
     name: "Pancakeswap",
@@ -105,14 +108,15 @@ const collaborationsList = [
   },
   {
     name: "Papara",
-    descr: "Product design concept for a digital \n payment platform in Turkey.",
+    descr:
+      "Product design concept for a digital \n payment platform in Turkey.",
   },
   {
     name: "NVO",
     descr:
       "Brand identity, product design and \n motion system for a digital wallet.",
   },
-   {
+  {
     name: "SmartCredit",
     descr: "Brand identity and platform design for \n a credit product.",
   },
@@ -125,13 +129,6 @@ const collaborationsList = [
     name: "Coinpayments",
     descr: "Product design for a digital asset \n exchange platform.",
   },
-
-
-
-
-
-
-
 ];
 
 const heroPictures = [
@@ -163,21 +160,9 @@ const page = () => {
       <div className="clients-content__wrapper">
         <HomePartners />
 
+        <Collaborations />
+
         <TestimonialsSlider testimonials={testimonialsList} />
-
-        <section className="clients-collaborations">
-          <BorderedTitle>Selected collaborations</BorderedTitle>
-          <ul className="clients-collaborations__list">
-            {collaborationsList.map((company, index) => (
-              <li className="clients-collaborations__item" key={index}>
-                <b>{company.name}</b>
-                <p>{company.descr}</p>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <LetsBuild />
 
         <section className="clients-industries">
           <BorderedTitle>Industries</BorderedTitle>
@@ -185,7 +170,10 @@ const page = () => {
             We work with teams across fintech, SaaS, AI and emerging
             technologies.
           </b>
+          <CommonLink url="">All industries ↗</CommonLink>
         </section>
+
+        <LetsBuild />
       </div>
     </main>
   );

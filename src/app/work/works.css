@@ -3,6 +3,7 @@
 }
 
 .works-content__title {
+  max-width: 825px;
   font-weight: 600;
   font-size: 56px;
 }
@@ -16,7 +17,7 @@
 
 .works-content__tabs {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px 96px;
   width: fit-content;
   max-width: 100%;
@@ -152,6 +153,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px 20px;
+    margin-top: 36px;
   }
 
   .works-list {

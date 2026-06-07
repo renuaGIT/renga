@@ -54,7 +54,7 @@ const PageHeader = () => {
         ))}
       </nav>
 
-      <Link href="contact-us" className="page-header__contact">
+      <Link href="/contact-us" className="page-header__contact">
         Get in touch
       </Link>
       <button

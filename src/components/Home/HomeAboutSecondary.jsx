@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CommonLink from "../CommonLink";
 
 const HomeAboutSecondary = () => {
   return (
@@ -19,9 +20,9 @@ const HomeAboutSecondary = () => {
         We design scalable digital products, visual systems and immersive brand
         experiences for modern technology companies.
       </p>
-      <Link href="/about" scroll={true} className="about-secondary__more">
-        About Renua
-      </Link>
+      <CommonLink url='/about'>
+        About Renua ↗
+      </CommonLink>
     </section>
   );
 };

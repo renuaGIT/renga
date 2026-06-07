@@ -25,9 +25,20 @@ export const metadata = {
 
   openGraph: {
     title: "Vodafone — Brand Campaign & Illustration System | Renua",
-
     description:
       "A large-scale illustration and campaign system for digital and outdoor communication.",
+
+    url: "https://renua.one/work/vodafone",
+    siteName: "Renua",
+    type: "website",
+    images: [
+      {
+        url: "https://renua.one/Renua_Preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Vodafone — Brand Campaign & Illustration System by Renua",
+      },
+    ],
   },
 };
 
@@ -124,12 +135,12 @@ const page = () => {
         <WorkDescription data={descriptionData} />
         <WorksTrippleGallery items={galleryItems1} isReversed={true} />
         <WorkInsight
-          title={`Illustration at the center.`}
+          title={`Illustration at the center`}
           descr={`A custom illustration language became the foundation of the campaign ecosystem — bringing more personality, movement and recognisability to the brand experience.`}
         />
         <WorkSingleMedia item={galleryItem2} />
         <WorkInsight
-          title={`Motion across platforms.`}
+          title={`Motion across platforms`}
           descr={`We developed a series of animated assets and motion-driven compositions designed for digital campaigns, product launches and large-scale media placements.`}
         />
         <WorksTrippleGallerySmall items={galleryItems3} />
@@ -137,7 +148,7 @@ const page = () => {
         <WorkSingleMedia item={galleryItem5} />
         <WorkSingleMedia item={galleryItem6} />
         <WorkInsight
-          title={`Built for digital communication.`}
+          title={`Built for digital communication`}
           descr={`From typography systems to modular layouts, the visual direction was designed to stay clear, scalable and highly adaptable across formats.`}
         />
         <WorksTrippleGallery items={galleryItems7}  isReversed={true} />
@@ -145,13 +156,13 @@ const page = () => {
         <WorkSingleMedia item={galleryItem9} />
         <WorkSingleMedia item={galleryItem10} />
         <WorkInsight
-          title={`A more dynamic brand experience.`}
+          title={`A more dynamic brand experience`}
           descr={`The final system combined illustration, motion and campaign design into a unified visual language built for contemporary communication.`}
         />
         <WorksTrippleGallery items={galleryItems11}  isReversed={true} />
         <WorksTrippleGallery items={galleryItems12}  isReversed={true} />
         <WorkInsight
-          title={`Simplifying financial interaction.`}
+          title={`Simplifying financial interaction`}
           descr={`The product experience focused on accessibility, hierarchy and speed — helping users navigate complex financial tools more intuitively.`}
         />
         <WorksTrippleGallery items={galleryItems13} />

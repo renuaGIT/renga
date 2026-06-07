@@ -20,9 +20,20 @@ export const metadata = {
 
   openGraph: {
     title: "Selected Work — Renua",
-
     description:
       "Product design, branding and motion projects for modern digital companies.",
+
+    url: "https://renua.one/work",
+    siteName: "Renua",
+    type: "website",
+    images: [
+      {
+        url: "https://renua.one/Renua_Preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Selected Work by Renua — Product Design, Branding & Motion",
+      },
+    ],
   },
 };
 
@@ -30,7 +41,7 @@ const page = () => {
   return (
     <main className='works-content'>
       <h1 className='works-content__title'>
-        Selected work across AI, <br/>
+        Selected work across AI,
         fintech and digital products.
       </h1>
       <p className='works-content__descr'>A selection of recent projects across branding, product design and digital experiences for ambitious teams.</p>

@@ -4,7 +4,7 @@ const LazyVideo = ({ src, poster, ...props }) => {
   return (
     <div >
       <video
-        src={src}
+        src={src === "" ? null : src}
         poster={poster}
         muted
         loop

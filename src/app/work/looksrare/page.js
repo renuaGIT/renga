@@ -25,9 +25,20 @@ export const metadata = {
 
   openGraph: {
     title: "LooksRare — NFT Marketplace Product Design & Branding | Renua",
-
     description:
       "A digital marketplace experience combining branding, UI systems and motion design.",
+
+    url: "https://renua.one/work/looksrare",
+    siteName: "Renua",
+    type: "website",
+    images: [
+      {
+        url: "https://renua.one/Renua_Preview.png",
+        width: 1200,
+        height: 630,
+        alt: "LooksRare — NFT Marketplace Product Design & Branding by Renua",
+      },
+    ],
   },
 };
 
@@ -125,7 +136,7 @@ const page = () => {
         <WorkDescription data={descriptionData} />
         <WorksTrippleGallery items={galleryItems1} />
         <WorkInsight
-          title={"Extending the identity beyond the platform."}
+          title={"Extending the identity beyond the platform"}
           descr={`The visual language expanded across campaigns, digital assets, apparel and motion systems — creating a more recognizable and immersive ecosystem around the product.`}
         />
         <WorkSingleMedia item={galleryItem2} />
@@ -136,7 +147,7 @@ const page = () => {
         <WorksHalfGallery item={galleryItem7} isReversed={true} />
         <WorksTrippleGallery items={galleryItems8} isReversed={true} />
         <WorkInsight
-          title={"Built as a scalable visual system."}
+          title={"Built as a scalable visual system"}
           descr={`Typography, color and interface components were designed to move consistently across marketplace experiences, campaigns and communication touchpoints.`}
           isReversed={true}
         />
@@ -146,13 +157,13 @@ const page = () => {
         <WorkSingleMedia item={galleryItem12} />
         <WorkSingleMedia item={galleryItem13} />
         <WorkInsight
-          title={"Designed around accessibility and interaction."}
+          title={"Designed around accessibility and interaction"}
           descr={`The product experience focused on hierarchy, usability and fast interaction flows across NFT discovery, trading and collection management.`}
           isReversed={true}
         />
         <WorksTrippleGallery items={galleryItems14} />
         <WorkInsight
-          title={"A more expressive digital marketplace."}
+          title={"A more expressive digital marketplace"}
           descr={`The final system combined branding, motion and product design into a unified experience built for modern digital communities.`}
         />
         <WorkSingleMedia item={galleryItem15} />

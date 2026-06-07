@@ -19,13 +19,8 @@
 }
 
 
-.WorkInsight__title {
-  font-weight: 500;
-}
-
 .WorkInsight__descr {
   margin-top: 28px;
-  font-weight: 500;
 }
 
 @media (max-width: 767px) {

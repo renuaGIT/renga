@@ -24,9 +24,20 @@ export const metadata = {
 
   openGraph: {
     title: "Freedom Finance Card Series — Fintech Card Design & 3D Visuals | Renua",
-
     description:
       "A premium fintech card series combining branding, materials and cinematic 3D visuals.",
+
+    url: "https://renua.one/work/freedom-finance_card-series",
+    siteName: "Renua",
+    type: "website",
+    images: [
+      {
+        url: "https://renua.one/Renua_Preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Freedom Finance Card Series — Fintech Card Design & 3D Visuals by Renua",
+      },
+    ],
   },
 };
 
@@ -118,18 +129,18 @@ const page = () => {
         <WorkDescription data={descriptionData} />
         <WorksTrippleGallery items={galleryItems1} />
         <WorkInsight
-          title={"Built around product aesthetics."}
+          title={"Built around product aesthetics"}
           descr={`We developed a series of card concepts combining industrial surfaces, motion-driven compositions and minimal visual systems.Each object was designed to feel premium, futuristic and digitally native.`}
         />
         <WorksTrippleGallery items={galleryItems2} />
         <WorkSingleMedia item={galleryItem3} />
         <WorkInsight
-          title={"Exploring material and motion."}
+          title={"Exploring material and motion"}
           descr={`Light, texture and movement became central elements of the visual language — transforming static financial objects into dynamic product experiences.`}
         />
         <WorksTrippleGallery items={galleryItems4} isReversed={true} />
         <WorkInsight
-          title={"A cinematic visual direction."}
+          title={"A cinematic visual direction"}
           descr={`The system extended across still compositions, motion studies and experimental product renders designed for digital campaigns and brand storytelling.`}
         />
         <WorksTrippleGallery items={galleryItems5} isReversed={true} />

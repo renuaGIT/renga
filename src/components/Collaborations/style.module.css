@@ -1,0 +1,62 @@
+.collabList {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 72px;
+}
+
+.collabListTitle {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.collabListItems {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.collabListItem {
+  height: 192px;
+  padding: 24px;
+  background-color: #F8F8F8;
+}
+
+.collabListItem b {
+  font-weight: 600;
+}
+
+.collabListItem p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #84858C;
+}
+
+.collabListItems + a {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1280) {
+  .collabListItems {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .collabList {
+    gap: 24px;
+  }
+
+  .collabListTitle {
+    font-size: 24px;
+  }
+
+  .collabListItems {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collabListItem {
+    height: auto;
+  }
+}

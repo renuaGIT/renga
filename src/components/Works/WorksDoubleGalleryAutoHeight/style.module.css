@@ -1,0 +1,30 @@
+.gallery {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.gallery--reversed {
+  flex-direction: row-reverse;
+}
+
+.mediaWrapper {
+  position: relative;
+  flex: 1;
+}
+
+.mediaWrapper img,
+.mediaWrapper video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    margin: 4px 0;
+    gap: 4px;
+  }
+}

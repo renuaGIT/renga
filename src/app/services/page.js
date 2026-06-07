@@ -1,6 +1,8 @@
 import "./services.css";
 
 import BorderedTitle from "@/components/BorderedTitle/BorderedTitle";
+import CommonLink from "@/components/CommonLink";
+import LastProjects from "@/components/LastProjects";
 import LazyVideo from "@/components/LazyVideo";
 import LetsBuild from "@/components/LetsBuild/LetsBuild";
 
@@ -13,7 +15,11 @@ const page = () => {
           We design brands, products and digital experiences — from early
           concepts to production-ready systems.
         </p>
-        <LazyVideo src={'/img/services/hero-video.webm'} poster={'/img/services/hero-poster.jpg'} className="services-content__top-video" />
+        <LazyVideo
+          src={"/img/services/hero-video.webm"}
+          poster={"/img/services/hero-poster.jpg"}
+          className="services-content__top-video"
+        />
       </section>
 
       <section className="services-features">
@@ -29,11 +35,13 @@ const page = () => {
         </p>
         <ul className="services-features__list">
           <li className="services-features__item">
-            <b className="services-features__item-title">Product Design</b>
-            <p className="services-features__item-descr">
-              We design digital products that are clear, usable and built to
-              scale.
-            </p>
+            <div className="services-features__item-info">
+              <b className="services-features__item-title">Product Design</b>
+              <p className="services-features__item-descr">
+                We design digital products that are clear, usable and built to
+                scale.
+              </p>
+            </div>
             <ul className="services-features__sublist">
               <li>Product strategy</li>
               <li>UX & flows</li>
@@ -43,11 +51,13 @@ const page = () => {
             </ul>
           </li>
           <li className="services-features__item">
-            <b className="services-features__item-title">Web Experiences</b>
-            <p className="services-features__item-descr">
-              We design and build websites that are fast, scalable and
-              production-ready.
-            </p>
+            <div className="services-features__item-info">
+              <b className="services-features__item-title">Web Experiences</b>
+              <p className="services-features__item-descr">
+                We design and build websites that are fast, scalable and
+                production-ready.
+              </p>
+            </div>
             <ul className="services-features__sublist">
               <li>Marketing websites</li>
               <li>Frontend development</li>
@@ -56,13 +66,15 @@ const page = () => {
             </ul>
           </li>
           <li className="services-features__item">
-            <b className="services-features__item-title">
-              Brand & Visual Identity
-            </b>
-            <p className="services-features__item-descr">
-              We create brand systems that are distinctive, flexible and built
-              for real use.
-            </p>
+            <div className="services-features__item-info">
+              <b className="services-features__item-title">
+                Brand & Visual Identity
+              </b>
+              <p className="services-features__item-descr">
+                We create brand systems that are distinctive, flexible and built
+                for real use.
+              </p>
+            </div>
             <ul className="services-features__sublist">
               <li>Identity systems</li>
               <li>Visual direction</li>
@@ -92,13 +104,27 @@ const page = () => {
         </ul>
       </section>
 
-      <LetsBuild />
-
       <section className="services-industries">
         <BorderedTitle>Industries</BorderedTitle>
-        <p className="services-industries__descr">We work with teams building the <br/> future of digital products.</p>
-        <b className="services-industries__text">Fintech, SaaS, Ecommerce, AI & Technology, Startups.</b>
+        <div className="services-industries__info">
+          <b className="services-industries__text">
+            AI Products <br/>
+            Fintech <br/>
+            SaaS Platforms <br/>
+            Blockchain <br/>
+          </b>
+          <p className="services-industries__descr">
+            We partner with ambitious technology companies to design products, visual systems and digital experiences built for long-term growth.
+          </p>
+        </div>
+        <CommonLink url='/work'>
+          All industries ↗
+        </CommonLink>
       </section>
+
+      <LastProjects smallItemTitle="Freedom Finance Bank" bigItemTitle="Nobleblocks" isReversed={true} />
+
+      <LetsBuild />
     </main>
   );
 };

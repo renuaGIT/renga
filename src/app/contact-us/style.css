@@ -2,30 +2,28 @@
   padding-top: 144px;
   padding-bottom: 16px;
   /* min-height: 100vh; */
-  width: 100%
+  width: 100%;
 }
 
 .contact-us__container {
-  max-width: 680px;
+  max-width: 540px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
 .contact-us__title {
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 40px;
+  font-size: 48px;
+  font-weight: 600;
   margin: 0;
   margin-bottom: 16px;
-  color: #0D0D0D;
+  color: #0d0d0d;
   font-family: "Neue Montreal", sans-serif;
 }
 
 .contact-us__descr {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: normal;
-  color: #84858C;
+  font-size: 20px;
+  line-height: 32px;
+  color: #0d0d0d;
   margin: 0;
   margin-bottom: 40px;
   font-family: "Neue Montreal", sans-serif;
@@ -47,8 +45,8 @@
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
-  color: #84858C;
-  background-color: #F1F1F1;
+  color: #84858c;
+  background-color: #f1f1f1;
   border: none;
   border-radius: 16px;
   cursor: pointer;
@@ -57,8 +55,8 @@
 }
 
 .contact-us__service--active {
-  background-color: #0D0D0D;
-  color: #FFFFFF;
+  background-color: #0d0d0d;
+  color: #ffffff;
 }
 
 .contact-us__form {
@@ -87,7 +85,7 @@ textarea {
   font-size: 24px;
   font-weight: 500;
   line-height: normal;
-  color: #0D0D0D;
+  color: #0d0d0d;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #e0e0e0;
@@ -117,7 +115,7 @@ textarea {
   font-size: 24px;
   font-weight: 500;
   line-height: normal;
-  color: #84858C;
+  color: #84858c;
   pointer-events: none;
   transition: all 0.2s ease;
   resize: none;
@@ -132,7 +130,7 @@ textarea {
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
-  color: #84858C;
+  color: #84858c;
 }
 
 .contact-us__file {
@@ -151,8 +149,8 @@ textarea {
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
-  color: #84858C;
-  background-color: #F1F1F1;
+  color: #84858c;
+  background-color: #f1f1f1;
   border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -189,7 +187,7 @@ textarea {
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
-  color: #84858C;
+  color: #84858c;
   margin-bottom: 12px;
   font-family: "Neue Montreal", sans-serif;
 }
@@ -210,7 +208,7 @@ textarea {
   font-size: 18px;
   font-weight: 500;
   line-height: normal;
-  color: #0D0D0D;
+  color: #0d0d0d;
   font-family: "Neue Montreal", sans-serif;
 }
 
@@ -222,7 +220,7 @@ textarea {
   align-items: center;
   gap: 10px;
   border-radius: 99px;
-  background: #ECECEC;
+  background: #ececec;
   flex-shrink: 0;
   cursor: pointer;
   transition: opacity 0.2s ease;
@@ -245,6 +243,40 @@ textarea {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.contact-us__budget p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #84858c;
+}
+
+.contact-us__budget fieldset {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.contact-us__budget input {
+  display: none;
+}
+
+.contact-us__budget label {
+  flex: 1;
+  font-weight: 500;
+  font-size: 16px;
+  color: #84858C;
+  text-align: center;
+  line-height: 43px;
+  background-color: #F1F1F1;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.contact-us__budget input:checked + label {
+  color: #ffffff;
+  background-color: #0D0D0D;
 }
 
 .contact-us__submit {
@@ -280,8 +312,8 @@ textarea {
 
 .contact-us__submit--disabled,
 .contact-us__submit:disabled {
-  background-color: #F1F1F1;
-  color: #FFF;
+  background-color: #f1f1f1;
+  color: #fff;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -394,12 +426,12 @@ textarea {
 
   .contact-us__input {
     font-size: 20px;
-    color: #0D0D0D;
+    color: #0d0d0d;
   }
 
   .contact-us__label {
     font-size: 20px;
-    color: #0D0D0D;
+    color: #0d0d0d;
   }
 
   .contact-us__input:focus + .contact-us__label,
@@ -407,19 +439,19 @@ textarea {
   .contact-us__textarea:focus + .contact-us__label,
   .contact-us__textarea:not(:placeholder-shown) + .contact-us__label {
     font-size: 16px;
-    color: #84858C;
+    color: #84858c;
   }
 
   .contact-us__file-label {
     padding: 12px 20px;
     font-size: 16px;
-    color: #84858C;
+    color: #84858c;
   }
 
   .contact-us__submit {
     padding: 12px 20px;
     font-size: 20px;
-    color: #FFF;
+    color: #fff;
     margin-bottom: 68px;
   }
 

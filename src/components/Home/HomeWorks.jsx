@@ -2,6 +2,7 @@ import Image from "next/image";
 import BorderedTitle from "../BorderedTitle/BorderedTitle";
 import Link from "next/link";
 import HomeWorksItem from "./HomeWorksItem";
+import CommonLink from "../CommonLink";
 
 const HomeWorks = () => {
   return (
@@ -70,9 +71,9 @@ const HomeWorks = () => {
           additionalClass="works__list-item--big"
         />
       </div>
-      <Link href="/works" className="works__more">
-        See more works
-      </Link>
+      <CommonLink url='/work'>
+        See more works ↗
+      </CommonLink>
     </section>
   );
 };

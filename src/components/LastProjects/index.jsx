@@ -3,6 +3,7 @@ import styles from "./style.module.css";
 import Link from "next/link";
 import BorderedTitle from "../BorderedTitle/BorderedTitle";
 import FollowCursor from "../FollowCursor";
+import CommonLink from "../CommonLink";
 
 const variants = [
   {
@@ -163,9 +164,9 @@ const LastProjects = ({
           }
         </Link>
       </nav>
-      <Link href="/work" className={styles.lastProjects__more}>
-        See more works
-      </Link>
+      <CommonLink url='/work'>
+        See more works ↗
+      </CommonLink>
     </section>
   );
 };

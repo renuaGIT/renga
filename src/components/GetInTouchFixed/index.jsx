@@ -17,7 +17,7 @@ const GetInTouchFixed = () => {
   })
 
   return (
-    <Link ref={buttonRef} className={styles.contactUs} href="contact-us">
+    <Link ref={buttonRef} className={styles.contactUs} href="/contact-us">
       Get in touch
     </Link>
   );
