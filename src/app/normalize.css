@@ -61,6 +61,7 @@ video {
   border: none;
   outline: none;
   overflow: hidden;
+  width: 100%;
 }
 
 /**

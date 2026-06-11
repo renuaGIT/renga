@@ -15,7 +15,7 @@ const WorksItem = ({ item }) => {
 
     if (rect.top < windowHeight && rect.bottom > 0) {
       const shift = (rect.top + rect.height / 2 - windowHeight / 2) * 0.05;
-      imgRef.current.style.transform = `translateY(${shift}px) scale(1.1)`;
+      imgRef.current.style.transform = `translateY(${shift}px)`;
     }
   });
 

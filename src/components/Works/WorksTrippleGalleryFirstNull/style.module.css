@@ -7,6 +7,8 @@
 
 .mediaWrapper {
   position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .mediaWrapper img,

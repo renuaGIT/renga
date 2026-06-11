@@ -76,7 +76,7 @@ export const allWorks = [
     slug: "pancakeswap",
     name: "Pancakeswap",
     tags: ["Product Design", "Branding", "Motion"],
-    isReady: false,
+    isReady: true,
   },
   {
     id: 9,

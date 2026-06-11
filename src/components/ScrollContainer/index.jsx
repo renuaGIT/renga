@@ -11,11 +11,22 @@ const ScrollReset = () => {
   useEffect(() => {
     if (!lenis) return;
 
-    const isWorkTabTransition =
-      prevPathname.current.startsWith("/work") && pathname.startsWith("/work");
+    const tabPaths = [
+      '/work',
+      '/work/brand-identity', '/work/product-design', '/work/web-design',
+      '/work/motion-design', '/work/illustration', '/work/3D-motion',
+      '/work/campaign-design', '/work/ai-platforms'
+    ];
 
-    if (!isWorkTabTransition) {
-      lenis.scrollTo(0, { immediate: true });
+    const isPrevTab = tabPaths.includes(prevPathname.current);
+    const isCurrentTab = tabPaths.includes(pathname);
+
+    const isPureTabTransition = isPrevTab && isCurrentTab;
+
+    if (!isPureTabTransition) {
+      requestAnimationFrame(() => {
+        lenis.scrollTo(0, { immediate: true });
+      });
     }
 
     prevPathname.current = pathname;

@@ -87,8 +87,8 @@ const galleryItems2 = [
 ];
 
 const galleryItem3 = {
-  src: "/img/works/nvo/gallery3.jpg",
-  poster: "/img/works/nvo/gallery3.webm",
+  src: "/img/works/nvo/gallery3.webm",
+  poster: "/img/works/nvo/gallery3.jpg",
 };
 
 const galleryItem4 = {

@@ -4,6 +4,7 @@ import Link from "next/link";
 import BorderedTitle from "../BorderedTitle/BorderedTitle";
 import FollowCursor from "../FollowCursor";
 import CommonLink from "../CommonLink";
+import LazyVideo from "../LazyVideo";
 
 const variants = [
   {
@@ -63,7 +64,7 @@ const variants = [
     bgColor: "#97F574",
     textColor: "#0D0D0D",
     posterUrl: "/img/last-projects/looksrare-poster.jpg",
-    videoUrl: "/img/last-projects/",
+    videoUrl: "",
     link: '/work/looksrare',
   },
   {
@@ -111,6 +112,7 @@ const LastProjects = ({
       <nav className={navClassName}>
         <Link
           href={smallData.link !== '' ? smallData.link : '#'}
+          scroll={true}
           className={
             styles.lastProjects__item +
             " " +
@@ -125,20 +127,14 @@ const LastProjects = ({
             <b>{smallData.title}</b>
             <span>{smallData.descr}</span>
           </div>
-          <video
-            src={smallData.videoUrl === "" ? null : smallData.videoUrl}
-            poster={smallData.posterUrl}
-            autoPlay
-            playsInline
-            muted
-            loop
-          />
+          <LazyVideo src={smallData.videoUrl} poster={smallData.posterUrl}  />
           {
             smallData.link === '' && <FollowCursor>Soon</FollowCursor>
           }
         </Link>
         <Link
           href={bigData.link !== '' ? bigData.link : '#'}
+          scroll={true}
           className={
             styles.lastProjects__item + " " + styles["lastProjects__item--big"]
           }
@@ -151,14 +147,7 @@ const LastProjects = ({
             <b>{bigData.title}</b>
             <span>{bigData.descr}</span>
           </div>
-          <video
-            src={smallData.videoUrl === "" ? null : smallData.videoUrl}
-            poster={bigData.posterUrl}
-            autoPlay
-            playsInline
-            muted
-            loop
-          />
+          <LazyVideo src={bigData.videoUrl} poster={bigData.posterUrl} />
           {
             bigData.link === '' && <FollowCursor>Soon</FollowCursor>
           }

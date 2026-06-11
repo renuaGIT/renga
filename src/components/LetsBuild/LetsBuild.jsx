@@ -10,7 +10,7 @@ const LetsBuild = () => {
       <p className="lets-build__descr">
         Tell us what you’re building — we’ll help shape it.
       </p>
-      <Link href="/contact-us" className="lets-build__link">
+      <Link href="/contact-us" scroll={true} className="lets-build__link">
         Start a project
       </Link>
     </section>
