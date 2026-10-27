@@ -11,6 +11,9 @@ const links = [
   { name: "Services", url: "/services" },
   { name: "Clients", url: "/clients" },
   { name: "About", url: "/about" },
+  // The blog is WordPress on another host; /blog redirects there (next.config.mjs),
+  // so it is a plain link: client-side navigation would fail on the cross-origin redirect.
+  { name: "Blog", url: "/blog", external: true },
 ];
 
 const PageHeader = () => {
@@ -40,18 +43,24 @@ const PageHeader = () => {
       </Link>
 
       <nav className="page-header__nav">
-        {links.map((link) => (
-          <Link
-            className={pathname.includes(link.url) ? "active" : ""}
-            href={link.url}
-            key={link.url}
-            onClick={closeMenu}
-            scroll={true}
-            prefetch={true}
-          >
-            {link.name}
-          </Link>
-        ))}
+        {links.map((link) =>
+          link.external ? (
+            <a href={link.url} key={link.url} onClick={closeMenu}>
+              {link.name}
+            </a>
+          ) : (
+            <Link
+              className={pathname.includes(link.url) ? "active" : ""}
+              href={link.url}
+              key={link.url}
+              onClick={closeMenu}
+              scroll={true}
+              prefetch={true}
+            >
+              {link.name}
+            </Link>
+          )
+        )}
       </nav>
 
       <Link href="/contact-us" className="page-header__contact">

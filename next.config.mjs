@@ -1,32 +1,20 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  async rewrites() {
-    return [
-      {
-        source: '/blog/:path*',
-        destination: 'https://renua-one.ghost.io/:path*', // <- КЛЮЧЕВОЙ МОМЕНТ: без /blog
-      },
-    ];
-  },
 
-  async headers() {
+// The blog lives on WordPress (WordPress.com site). Temporary redirect, so the address can still move.
+const BLOG_URL = 'https://heyc5b0607b1175-togbz.wpcomstaging.com';
+
+const nextConfig = {
+  async redirects() {
     return [
       {
+        source: '/blog',
+        destination: `${BLOG_URL}/`,
+        permanent: false,
+      },
+      {
         source: '/blog/:path*',
-        headers: [
-          {
-            key: 'X-Forwarded-Host',
-            value: 'renua.one',
-          },
-          {
-            key: 'X-Forwarded-Proto',
-            value: 'https',
-          },
-          {
-            key: 'X-Forwarded-For',
-            value: '', // Vercel подставит IP автоматически
-          },
-        ],
+        destination: `${BLOG_URL}/:path*`,
+        permanent: false,
       },
     ];
   },
