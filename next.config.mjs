@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 // The blog lives on WordPress (WordPress.com site). Temporary redirect, so the address can still move.
-const BLOG_URL = 'https://heyc5b0607b1175-togbz.wpcomstaging.com';
+const BLOG_URL = 'https://blog.renua.one';
 
 const nextConfig = {
   async redirects() {
